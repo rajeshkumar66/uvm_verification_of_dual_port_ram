@@ -1,0 +1,319 @@
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_top/dut/clk}} {{/tb_top/dut/rst_n}} {{/tb_top/dut/wr_en1}} {{/tb_top/dut/wr_en2}} {{/tb_top/dut/addr1}} {{/tb_top/dut/addr2}} {{/tb_top/dut/data1}} {{/tb_top/dut/data2}} {{/tb_top/dut/data_out1}} {{/tb_top/dut/data_out2}} {{/tb_top/dut/ram}} {{/tb_top/dut/WIDTH}} {{/tb_top/dut/DEPTH}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/RAJESHKUMAR/verification_project/verification_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/RAJESHKUMAR/verification_project/verification_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_top_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/RAJESHKUMAR/verification_project/verification_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/RAJESHKUMAR/verification_project/verification_project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1391.195 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1391.195 ; gain = 0.000
+Time resolution is 1 ps
+UVM_INFO C:/Xilinx/Vivado/2023.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test dpram_test...
+UVM_INFO C:/Xilinx/Vivado/2023.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 30000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 50000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 70000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 110000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 110000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 130000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 150000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 170000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 190000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 210000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 210000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 250000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 250000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 270000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 290000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 310000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 330000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 350000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 350000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 370000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 370000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 390000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 410000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 410000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=185 EXP=185
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 430000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 450000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 470000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 510000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 530000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 590000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 610000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 59 EXP= 59
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 630000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 650000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=147 EXP=147
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 650000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 670000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 710000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=112 EXP=112
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 710000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=169 EXP=169
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 730000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 750000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 770000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 770000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 790000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 810000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 830000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 870000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 890000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 890000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 910000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 930000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 930000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 950000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 970000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1391.195 ; gain = 0.000
+run all
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1090000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 48 EXP= 48
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1130000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1150000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=169 EXP=169
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1190000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1210000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1210000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=218 EXP=218
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1230000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1250000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1270000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 68 EXP= 68
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1290000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1290000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 68 EXP= 68
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1310000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1370000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1390000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1410000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1430000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1450000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1490000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1510000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=100 EXP=100
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1530000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 62 EXP= 62
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1550000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1550000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1590000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1610000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=154 EXP=154
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1630000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1670000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 99 EXP= 99
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1690000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1750000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=147 EXP=147
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1750000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 71 EXP= 71
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1790000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1810000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1810000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=147 EXP=147
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1850000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1870000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1890000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1890000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1930000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1950000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 1990000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 1990000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2010000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2090000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2110000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2130000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 48 EXP= 48
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2190000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2210000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=148 EXP=148
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2250000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 56 EXP= 56
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2270000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2290000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2310000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=185 EXP=185
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2330000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  4 EXP=  4
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2330000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2350000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 56 EXP= 56
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2350000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2370000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2390000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2390000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=234 EXP=234
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2410000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=242 EXP=242
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2410000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=106 EXP=106
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2450000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2470000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2490000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2510000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2530000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=100 EXP=100
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2530000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=106 EXP=106
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2570000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2590000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=218 EXP=218
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2610000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2610000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=107 EXP=107
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2650000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2670000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 21 EXP= 21
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2690000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2690000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2710000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2730000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2730000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 41 EXP= 41
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2750000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2770000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2810000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2830000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2830000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=235 EXP=235
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2850000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2870000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 56 EXP= 56
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2870000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 29 EXP= 29
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2890000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 90 EXP= 90
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2910000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2930000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 2930000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2970000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 2990000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 17 EXP= 17
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3010000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 21 EXP= 21
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3030000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3030000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3050000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  5 EXP=  5
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3050000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3090000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3090000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=216 EXP=216
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3110000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3210000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 21 EXP= 21
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3210000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3230000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=187 EXP=187
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3250000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=237 EXP=237
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3270000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 29 EXP= 29
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3310000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3310000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 41 EXP= 41
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3330000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3330000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=163 EXP=163
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3350000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3370000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=148 EXP=148
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3390000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3390000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 81 EXP= 81
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3450000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=204 EXP=204
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3470000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=197 EXP=197
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3470000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3490000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 90 EXP= 90
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3510000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3550000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3550000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=242 EXP=242
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3570000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=253 EXP=253
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3590000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=231 EXP=231
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3650000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3650000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3670000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 93 EXP= 93
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3690000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3690000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 48 EXP= 48
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3730000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3750000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3770000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 79 EXP= 79
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3790000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 43 EXP= 43
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3810000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=100 EXP=100
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3830000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=137 EXP=137
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3830000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3870000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3870000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3910000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=203 EXP=203
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3910000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=142 EXP=142
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3930000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 25 EXP= 25
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 3970000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 62 EXP= 62
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 3990000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 57 EXP= 57
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4010000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 49 EXP= 49
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4030000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=114 EXP=114
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4050000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=204 EXP=204
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4070000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4070000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 75 EXP= 75
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4090000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4090000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4110000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 22 EXP= 22
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4130000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=182 EXP=182
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4150000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 95 EXP= 95
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4170000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=148 EXP=148
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4190000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4250000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=165 EXP=165
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4290000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 90 EXP= 90
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4310000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4310000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 56 EXP= 56
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4330000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=191 EXP=191
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4350000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4350000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=182 EXP=182
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4370000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4390000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 30 EXP= 30
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4430000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 42 EXP= 42
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4450000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 41 EXP= 41
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4450000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=240 EXP=240
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4470000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4490000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=229 EXP=229
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4530000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=187 EXP=187
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4570000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 84 EXP= 84
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4570000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=100 EXP=100
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4590000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4630000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT= 61 EXP= 61
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4650000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4670000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  7 EXP=  7
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4690000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=247 EXP=247
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4710000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4730000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4750000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=101 EXP=101
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4790000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4790000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4810000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=231 EXP=231
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4830000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4830000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4850000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  8 EXP=  8
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4850000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4890000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=172 EXP=172
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4930000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=  0 EXP=  0
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(55) @ 4950000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=215 EXP=215
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4970000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=237 EXP=237
+UVM_INFO C:/Users/RAJESHKUMAR/verification_project/verification_project.srcs/sim_1/imports/new/scoreboard.sv(48) @ 4990000: uvm_test_top.env.scb [COMPARE] Transaction Passes ACT=160 EXP=160
+UVM_INFO C:/Xilinx/Vivado/2023.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(19968) @ 5000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO C:/Xilinx/Vivado/2023.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(13673) @ 5000000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  244
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COMPARE]   240
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+
+$finish called at time : 5 us : File "C:/Xilinx/Vivado/2023.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
